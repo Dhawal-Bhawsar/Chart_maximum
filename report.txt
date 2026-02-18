@@ -1,0 +1,34 @@
+Frontend Intern Assignment
+Build a Custom Chart Component (Angular)
+Objective
+Create a reusable Angular chart component that renders different chart types based on configuration input. This
+assignment evaluates HTML, CSS, JavaScript, Angular usage, and component design.
+Task Description
+Develop a custom Angular component: <io-chart [chartOptions]="options"></io-chart> The component must
+render charts dynamically based on input.
+Chart Options Format
+interface ChartOptions { type: 'line' | 'column' | 'pie'; title: string; series: { name: string; value: number; color: string;
+}[]; }
+Example Input
+chartOptions = { type: 'line', title: 'Sales Report', series: [ { name: 'Offline', value: 30, color: 'red' }, { name: 'Online',
+value: 70, color: 'blue' } ] };
+Supported Chart Types
+1. Line Chart – Connected points with axes. 2. Column Chart – Vertical bars. 3. Pie Chart – Circular segments.
+Technical Rules
+Allowed: - Angular components - HTML/CSS/SVG/Canvas - TypeScript Not Allowed: - External chart libraries -
+Copy-paste packages
+UI Requirements
+- Display title - Centered layout - Responsive design - Clean styling Bonus: - Hover effects - Legend - Animations
+Suggested Project Structure
+src/ ■■■ app/ ■■■ chart/ ■■■ chart.component.ts ■■■ chart.component.html ■■■ chart.component.scss
+Timeline
+Duration: 3–4 Days
+Submission Guidelines
+Submit: 1. GitHub Repository 2. README.md 3. Screenshots of charts
+Evaluation Criteria (100 Marks)
+Angular Usage – 20 Chart Logic – 25 Reusability – 20 UI/CSS – 15 Code Quality – 10 Documentation – 10
+Best Practices
+- Write clean and readable code - Use interfaces and proper naming - Handle edge cases - Document your
+approach
+All the best!
+We look forward to reviewing your submission.
